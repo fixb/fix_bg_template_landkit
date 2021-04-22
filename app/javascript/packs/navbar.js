@@ -3,75 +3,70 @@
 // Theme module
 //
 
-'use strict';
+const navbarTogglable = document.querySelectorAll('.navbar-togglable');
+const navbarCollapse = document.querySelectorAll('.navbar-collapse');
+const windowEvents = ['load', 'scroll'];
 
-(function() {
-  var navbarTogglable = document.querySelectorAll('.navbar-togglable');
-  var navbarCollapse = document.querySelectorAll('.navbar-collapse');
-  var windowEvents = ['load', 'scroll'];
-  var isLight = false;
+let isLight = false;
 
-  function makeNavbarDark(navbar) {
-    navbar.classList.remove('navbar-light');
-    navbar.classList.remove('bg-white');
-    navbar.classList.add('navbar-dark');
+function makeNavbarDark(navbar) {
+  navbar.classList.remove('navbar-light');
+  navbar.classList.remove('bg-white');
+  navbar.classList.add('navbar-dark');
 
-    isLight = false;
+  isLight = false;
+}
+
+function makeNavbarLight(navbar) {
+  navbar.classList.remove('navbar-dark');
+  navbar.classList.add('navbar-light');
+  navbar.classList.add('bg-white');
+
+  isLight = true;
+}
+
+function toggleNavbar(navbar) {
+  const scrollTop = window.pageYOffset;
+
+  if (scrollTop && !isLight) {
+    makeNavbarLight(navbar);
   }
 
-  function makeNavbarLight(navbar) {
-    navbar.classList.remove('navbar-dark');
-    navbar.classList.add('navbar-light');
-    navbar.classList.add('bg-white');
-
-    isLight = true;
+  if (!scrollTop) {
+    makeNavbarDark(navbar);
   }
+}
 
-  function toggleNavbar(navbar) {
-    var scrollTop = window.pageYOffset;
+function overflowHide() {
+  const scrollbarWidth = getScrollbarWidth();
 
-    if (scrollTop && !isLight) {
-      makeNavbarLight(navbar);
-    }
+  document.documentElement.style.overflow = 'hidden';
+  document.body.style.paddingRight = scrollbarWidth + 'px';
+}
 
-    if (!scrollTop) {
-      makeNavbarDark(navbar);
-    }
-  }
+function overflowShow() {
+  document.documentElement.style.overflow = '';
+  document.body.style.paddingRight = '';
+}
 
-  function overflowHide() {
-    var scrollbarWidth = getScrollbarWidth();
+function getScrollbarWidth() {
+  return window.innerWidth - document.documentElement.clientWidth;
+}
 
-    document.documentElement.style.overflow = 'hidden';
-    document.body.style.paddingRight = scrollbarWidth + 'px';
-  }
-
-  function overflowShow() {
-    document.documentElement.style.overflow = '';
-    document.body.style.paddingRight = '';
-  }
-
-  function getScrollbarWidth() {
-    return window.innerWidth - document.documentElement.clientWidth;
-  }
-
-  [].forEach.call(navbarTogglable, function(navbar) {
-    windowEvents.forEach(function(event) {
-      window.addEventListener(event, function() {
-        toggleNavbar(navbar);
-      });
+navbarTogglable.forEach(function(navbar) {
+  windowEvents.forEach(function(event) {
+    window.addEventListener(event, function() {
+      toggleNavbar(navbar);
     });
   });
+});
 
-  [].forEach.call(navbarCollapse, function(collapse) {
-    $(collapse).on({
-      'show.bs.collapse': function() {
-        overflowHide();
-      },
-      'hidden.bs.collapse': function() {
-        overflowShow();
-      }
-    });
+navbarCollapse.forEach(function(collapse) {
+  collapse.addEventListener('show.bs.collapse', function() {
+    overflowHide();
   });
 
-})();
+  collapse.addEventListener('hidden.bs.collapse', function() {
+    overflowShow();
+  });
+});
