@@ -1,6 +1,6 @@
     <!-- WELCOME
     ================================================== -->
-    <section data-jarallax data-speed=".8" class="pt-12 pb-10 pt-md-15 pb-md-14" style="background-image: url(assets/img/covers/cover-3.jpg)">
+    <section data-jarallax data-speed=".8" class="pt-12 pb-10 pt-md-15 pb-md-14" style="background-image: url(<%= asset_path('covers/cover-3.jpg') %>">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-8 col-lg-6">
@@ -68,7 +68,7 @@
 
                 <!-- Image -->
                 <div class="w-150 mt-9 p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="100">
-                  <img src="assets/img/photos/photo-13.jpg" class="img-fluid" alt="...">
+                  <%= image_tag("photos/photo-13.jpg", class: "img-fluid") %>
                 </div>
 
               </div>
@@ -76,7 +76,7 @@
 
                 <!-- Image -->
                 <div class="w-150 p-1 bg-white shadow-lg" data-aos="fade-up">
-                  <img src="assets/img/photos/photo-14.jpg" class="img-fluid" alt="...">
+                  <%= image_tag("photos/photo-14.jpg", class: "img-fluid") %>
                 </div>
 
               </div>
@@ -84,7 +84,7 @@
 
                 <!-- Image -->
                 <div class="w-150 mt-11 float-right p-1 bg-white shadow-lg" data-aos="fade-up" data-aos-delay="150">
-                  <img src="assets/img/photos/photo-15.jpg" class="img-fluid" alt="...">
+                  <%= image_tag("photos/photo-15.jpg", class: "img-fluid") %>
                 </div>
 
               </div>
@@ -211,7 +211,7 @@
     ================================================== -->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-        @@include("assets/img/shapes/curves/curve-2.svg")
+        <%= image_tag("shapes/curves/curve-2.svg") %>
       </div>
     </div>
 
@@ -241,7 +241,7 @@
           <div class="col-12 col-md-6">
 
             <!-- Image -->
-            <img src="assets/img/illustrations/illustration-3.png" class="img-fluid" alt="...">
+            <%= image_tag("illustrations/illustration-3.png", class: "img-fluid") %>
 
           </div>
         </div> <!-- / .row -->
@@ -551,16 +551,16 @@
 
     <!-- IMAGE
     ================================================== -->
-    <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax" style="background-image: url(assets/img/covers/cover-7.jpg);">
+    <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax" style="background-image: url(<%= asset_path 'covers/cover-7.jpg' %>;">
 
       <!-- Shape -->
       <div class="shape shape-top shape-fluid-x svg-shim text-white">
-        @@include("assets/img/shapes/angles/angle-top.svg")
+        <%= image_tag("shapes/angles/angle-top.svg") %>
       </div>
 
       <!-- Shape -->
       <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-        @@include("assets/img/shapes/angles/angle-bottom.svg")
+        <%= image_tag("shapes/angles/angle-bottom.svg") %>
       </div>
 
     </section>
@@ -610,7 +610,7 @@
 
               <!-- Icon -->
               <div class="icon text-primary">
-                @@include("assets/img/icons/duotone-icons/General/Clipboard.svg")
+                <%= image_tag("icons/duotone-icons/General/Clipboard.svg") %>
               </div>
 
               <div class="ml-5">
@@ -632,7 +632,7 @@
 
               <!-- Icon -->
               <div class="icon text-primary">
-                @@include("assets/img/icons/duotone-icons/Files/Folder-star.svg")
+                <%= image_tag("icons/duotone-icons/Files/Folder-star.svg") %>
               </div>
 
               <div class="ml-5">
@@ -690,15 +690,4 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- FOOTER
-    ================================================== -->
-    @@include("partials/footer.html", {
-    "classList": "bg-white"
-    })
 
-    <!-- JAVASCRIPT
-    ================================================== -->
-    @@include("partials/scripts.html")
-
-  </body>
-</html>

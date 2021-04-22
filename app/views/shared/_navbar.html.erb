@@ -3,7 +3,7 @@
 
     <!-- Brand -->
     <a class="navbar-brand" href="@@webRoot/index.html">
-      <img src="@@webRoot/assets/img/logo_boussard_gavaudan_white.png" class="navbar-brand-img" alt="...">
+      <%= image_tag("logo_boussard_gavaudan_white.png", class: "navbar-brand-img") %>
     </a>
 
     <!-- Toggler -->
@@ -28,7 +28,7 @@
           <div class="dropdown-menu dropdown-menu-xl p-0" aria-labelledby="navbarLandings">
             <div class="row no-gutters">
               <div class="col-12 col-lg-6">
-                <div class="dropdown-img-left" style="background-image: url(@@webRoot/assets/img/photos/photo-3.jpg);">
+                <div class="dropdown-img-left" style="background-image: url(<%= asset_path('photos/photo-3.jpg') %>">
 
                   <!-- Heading -->
                   <h4 class="font-weight-bold text-white mb-0">
@@ -294,7 +294,7 @@
 
                 <!-- Icon -->
                 <div class="icon icon-sm text-primary">
-                  @@include("../assets/img/icons/duotone-icons/General/Clipboard.svg")
+                  <%= image_tag("icons/duotone-icons/General/Clipboard.svg") %>
                 </div>
 
                 <!-- Content -->
