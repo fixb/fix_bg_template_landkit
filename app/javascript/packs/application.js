@@ -24,8 +24,9 @@ console.log('Hello World from Webpacker')
 // ----------------------------------------------------
 
 // External imports
-import "bootstrap";
 import "../styles/theme";
+import "../js/theme";
+
 
 
 

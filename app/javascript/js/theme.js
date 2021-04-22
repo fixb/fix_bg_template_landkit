@@ -12,7 +12,7 @@ import './bigpicture';
 import './choices';
 import './countup';
 import './dropzone';
-import './highlight';
+// import './highlight';
 import './isotope';
 import './jarallax';
 import './map';
