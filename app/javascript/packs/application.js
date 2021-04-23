@@ -28,6 +28,7 @@ import "../styles/theme";
 import "../js/theme";
 
 import { myTyped } from "../js/typed";
+import { loadDynamicBannerText } from "../js/typed";
 myTyped();
 
 
@@ -39,7 +40,7 @@ myTyped();
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  // myTyped();
+  loadDynamicBannerText();
 });
 
 import "controllers"

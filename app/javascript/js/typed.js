@@ -27,6 +27,18 @@ toggles.forEach(toggle => {
 
   new Typed(toggle, options);
 });
+};
+
+const loadDynamicBannerText = () => {
+  new Typed('#banner-typed-text', {
+    strings: ["Convertible bond issuance", "Capital increase underwriting", "Loans financing", "Equity ownership"],
+    typeSpeed: 40,
+    backSpeed: 40,
+    backDelay: 1000,
+    loop: true
+  });
 }
+
+export { loadDynamicBannerText };
 
 export { myTyped };
