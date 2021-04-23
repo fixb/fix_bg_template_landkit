@@ -27,6 +27,8 @@ console.log('Hello World from Webpacker')
 import "../styles/theme";
 import "../js/theme";
 
+import { myTyped } from "../js/typed";
+myTyped();
 
 
 
@@ -37,4 +39,5 @@ import "../js/theme";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  // myTyped();
 });

@@ -5,6 +5,8 @@
     "@fancyapps/fancybox": "^3.5.7",
     "@popperjs/core": "^2.9.2",
     "@rails/webpacker": "5.2.1",
+    "@types/highlight.js": "^10.1.0",
+    "@types/highlightjs": "^9.12.1",
     "aos": "^2.3.4",
     "bigpicture": "^2.5.3",
     "bootstrap": "^5.0.0-beta3",

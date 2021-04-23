@@ -5,6 +5,9 @@
 
 import Typed from 'typed.js';
 
+const myTyped = () => {
+
+
 const toggles = document.querySelectorAll('[data-typed]');
 
 toggles.forEach(toggle => {
@@ -24,3 +27,6 @@ toggles.forEach(toggle => {
 
   new Typed(toggle, options);
 });
+}
+
+export { myTyped };
