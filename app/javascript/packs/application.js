@@ -26,6 +26,7 @@ console.log('Hello World from Webpacker')
 // External imports
 import "../styles/theme";
 import "../js/theme";
+import "controllers"
 
 import { myTyped } from "../js/typed";
 import { loadDynamicBannerText } from "../js/typed";
@@ -40,7 +41,7 @@ myTyped();
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  loadDynamicBannerText();
+  if (document.getElementById("banner-typed-text")) {loadDynamicBannerText();}
 });
 
-import "controllers"
+

@@ -8,7 +8,8 @@ import Typed from 'typed.js';
 const myTyped = () => {
 
 
-const toggles = document.querySelectorAll('[data-typed]');
+// const toggles = document.querySelectorAll('[data-typed]');
+const toggles = document.querySelectorAll("#typed-about");
 
 toggles.forEach(toggle => {
   const elementOptions = toggle.dataset.typed ? JSON.parse(toggle.dataset.typed) : {};
@@ -40,5 +41,4 @@ const loadDynamicBannerText = () => {
 }
 
 export { loadDynamicBannerText };
-
 export { myTyped };
