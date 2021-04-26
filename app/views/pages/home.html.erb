@@ -521,7 +521,7 @@
             <div class="d-flex">
               <div class="pr-5">
                 <h3 class="mb-0">
-                  <span data-toggle="countup" data-from="15" data-to="70" data-aos data-aos-id="countup:in">0</span>m €
+                  <span id="countup" data-toggle="countup" data-from="15" data-to="70" data-aos data-aos-id="countup:in">0</span>m €
                 </h3>
                 <p class="text-gray-700 mb-0">
                   Invested by ideas in average
@@ -678,9 +678,8 @@
           <div class="col-12 col-md-auto">
 
             <!-- Button -->
-            <a href="#!" class="btn btn-primary-soft mr-1 lift">
-              Learn more
-            </a>
+            <%= link_to 'Learn more', about_path, class: "btn btn-primary-soft mr-1 lift" %>
+
 
             <a href="#!" class="btn btn-primary lift">
               Contact us

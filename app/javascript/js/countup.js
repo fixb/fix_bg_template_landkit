@@ -8,6 +8,7 @@ import { CountUp } from 'countup.js';
 
 const toggles = document.querySelectorAll('[data-countup]');
 
+
 function init(toggle) {
   const endVal = toggle.dataset.to ? +toggle.dataset.to : null;
   const options = toggle.dataset.countup ? JSON.parse(toggle.dataset.countup) : {};
