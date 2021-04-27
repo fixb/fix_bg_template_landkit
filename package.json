@@ -11,6 +11,7 @@
     "bigpicture": "^2.5.3",
     "bootstrap": "^5.0.0-beta3",
     "browser-sync": "^2.26.14",
+    "chart.js": "^3.2.0",
     "choices.js": "^9.0.1",
     "countup.js": "^2.0.7",
     "del": "^6.0.0",

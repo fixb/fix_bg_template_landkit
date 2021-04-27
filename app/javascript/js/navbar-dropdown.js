@@ -3,6 +3,7 @@
 // Theme module
 //
 
+const navBar = () => {
 // Selectors
 const drops = document.querySelectorAll('.navbar-nav .dropdown, .navbar-nav .dropend');
 
@@ -71,3 +72,6 @@ drops.forEach(function(dropdown) {
     });
   });
 });
+}
+
+export { navBar };

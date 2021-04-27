@@ -31,11 +31,14 @@ import "controllers"
 import { myTyped } from "../js/typed";
 import { loadDynamicBannerText } from "../js/typed";
 import { theCountup } from "../js/countup";
+import { navBar } from "../js/navbar-dropdown";
 myTyped();
 theCountup();
+navBar();
 
 
 
+// import { dashboardLine } from "./charts";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -45,5 +48,10 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   if (document.getElementById("banner-typed-text")) {loadDynamicBannerText();}
 });
+
+
+// if (document.getElementById("chartjs-dashboard-line")) {
+//   dashboardLine();
+// }
 
 
