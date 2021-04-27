@@ -8,6 +8,9 @@ import { CountUp } from 'countup.js';
 
 
 // const toggles = document.querySelectorAll('[data-countup]');
+
+const theCountup = () => {
+
 const toggles = document.querySelectorAll('#countup');
 
 
@@ -33,3 +36,7 @@ document.addEventListener('aos:in:countup:in', function(e) {
     init(count);
   });
 });
+}
+
+export { theCountup };
+

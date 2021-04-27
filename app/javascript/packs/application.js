@@ -30,7 +30,9 @@ import "controllers"
 
 import { myTyped } from "../js/typed";
 import { loadDynamicBannerText } from "../js/typed";
+import { theCountup } from "../js/countup";
 myTyped();
+theCountup();
 
 
 
