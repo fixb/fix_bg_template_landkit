@@ -6,7 +6,9 @@
 
 import { CountUp } from 'countup.js';
 
-const toggles = document.querySelectorAll('[data-countup]');
+
+// const toggles = document.querySelectorAll('[data-countup]');
+const toggles = document.querySelectorAll('#countup');
 
 
 function init(toggle) {
