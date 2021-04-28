@@ -38,7 +38,9 @@ navBar();
 
 
 
-// import { dashboardLine } from "./charts";
+import { dashboardLine } from "./charts";
+import { dashboardLineJazztel } from "./charts";
+import { dashboardLineJazztelPnl } from "./charts";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -50,8 +52,14 @@ document.addEventListener('turbolinks:load', () => {
 });
 
 
-// if (document.getElementById("chartjs-dashboard-line")) {
-//   dashboardLine();
-// }
+if (document.getElementById("myChart")) {
+  dashboardLine();
+};
 
+if (document.getElementById("myChartJazztel")) {
+  dashboardLineJazztel();
+};
 
+if (document.getElementById("myChartJazztelPnl")) {
+  dashboardLineJazztelPnl();
+};

@@ -19,13 +19,13 @@
               <div class="col-auto">
                 <!-- Avatar -->
                 <div class="avatar avatar-lg">
-                  <%= image_tag("avatars/avatar-1.jpg", class: "avatar-img rounded-circle") %>
+                  <%= image_tag("avatars/avatar-fix.jpg", class: "avatar-img rounded-circle") %>
                 </div>
               </div>
               <div class="col ms-n5">
                 <!-- Name -->
                 <h6 class="text-uppercase mb-0">
-                  Ab Hadley
+                  François-Xavier Baud
                 </h6>
 
                 <!-- Date -->
@@ -93,28 +93,7 @@
     <section class="pt-6 pt-md-8">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-11 col-xl-10">
-            <!-- Fugure -->
-            <figure class="figure mb-0">
-              <!-- Slider -->
-              <div class="figure-img" data-flickity='{"wrapAround": true, "pageDots": false, "imagesLoaded": true, "adaptiveHeight": true}'>
-                <div class="w-100">
-                  <%= image_tag("portfolio/portfolio-cover-3.jpg", class: "img-fluid rounded") %>
-                </div>
-                <div class="w-100">
-                  <%= image_tag("portfolio/portfolio-cover-4.jpg", class: "img-fluid rounded") %>
-                </div>
-                <div class="w-100">
-                  <%= image_tag("portfolio/portfolio-cover-5.jpg", class: "img-fluid rounded") %>
-                </div>
-              </div>
-
-              <!-- Caption -->
-              <figcaption class="figure-caption text-center">
-                This is a caption on this photo for reference
-              </figcaption>
-            </figure>
-          </div>
+            <canvas id="myChart"></canvas>
         </div>
         <!-- / .row -->
       </div>
@@ -174,27 +153,27 @@
               <div class="col-6">
 
                 <!-- Image -->
-                <a class="d-block mb-4" data-bigpicture='{"imgSrc": "assets/img/portfolio/portfolio-6.jpg"}' href="#">
-                  <%= image_tag("portfolio/portfolio-6.jpg", class: "img-fluid rounded lift lift-lg") %>
-                </a>
+                <div>
+                  <canvas id="myChartJazztel"></canvas>
+                </div>
 
                 <!-- Image -->
-                <a class="d-block lift" data-bigpicture='{"imgSrc": "assets/img/portfolio/portfolio-12.jpg"}' href="#">
-                  <%= image_tag("portfolio/portfolio-12.jpg", class: "img-fluid rounded lift lift-lg") %>
-                </a>
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
 
               </div>
               <div class="col-6">
 
                 <!-- Image -->
-                <a class="d-block mb-4" data-bigpicture='{"imgSrc": "assets/img/portfolio/portfolio-15.jpg"}' href="#">
-                  <%= image_tag("portfolio/portfolio-15.jpg", class: "img-fluid rounded lift lift-lg") %>
-                </a>
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
 
                 <!-- Image -->
-                <a class="d-block" data-bigpicture='{"imgSrc": "assets/img/portfolio/portfolio-7.jpg"}' href="#">
-                  <%= image_tag("portfolio/portfolio-7.jpg", class: "img-fluid rounded lift lift-lg") %>
-                </a>
+                <div>
+                  <canvas id="myChartJazztelPnl"></canvas>
+                </div>
 
               </div>
             </div>

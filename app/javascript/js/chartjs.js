@@ -1,3 +1,3 @@
-import { Chart, LineController, LineElement, PointElement, LinearScale, Title } from 'chart.js'
+import { Chart } from 'chart.js'
 
 window.Chart = Chart;
