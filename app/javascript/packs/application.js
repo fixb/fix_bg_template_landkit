@@ -41,6 +41,9 @@ navBar();
 import { dashboardLine } from "./charts";
 import { dashboardLineJazztel } from "./charts";
 import { dashboardLineJazztelPnl } from "./charts";
+import { dashboardLineCggPnl } from "./charts";
+import { priceCl } from "./charts";
+import { priceCgg } from "./charts";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -62,4 +65,16 @@ if (document.getElementById("myChartJazztel")) {
 
 if (document.getElementById("myChartJazztelPnl")) {
   dashboardLineJazztelPnl();
+};
+
+if (document.getElementById("myChartCggPnl")) {
+  dashboardLineCggPnl();
+};
+
+if (document.getElementById("myChartpriceCl")) {
+  priceCl();
+};
+
+if (document.getElementById("myChartpriceCgg")) {
+  priceCgg();
 };
