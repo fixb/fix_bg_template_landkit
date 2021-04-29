@@ -4,12 +4,20 @@ import Chart from 'chart.js/auto';
 const dashboardLine = () => {
   $(function() {
       const labels = [
-                'January',
-                'February',
-                'March',
-                'April',
-                'May',
-                'June',
+                '2002',
+                '2003',
+                '2004',
+                '2005',
+                '2006',
+                '2007',
+                '2008',
+                '2009',
+                '2010',
+                '2011',
+                '2012',
+                '2013',
+                '2014',
+                '2015',
                       ];
 
       const data = {
@@ -18,7 +26,7 @@ const dashboardLine = () => {
           label: 'Jazztel Stock price',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
-          data: [0, 10, 5, 2, 20, 30, 45],
+          data: [4.0376, 2.5902, 5.485, 6.4754, 5.0214, 2.5107, 1.2958, 2.66, 3.55, 3.737, 5.255, 7.779, 12.55, 12.98],
         }]
       };
 
@@ -38,21 +46,23 @@ const dashboardLine = () => {
 const dashboardLineJazztel = () => {
   $(function() {
       const labels = [
-                'January',
-                'February',
-                'March',
-                'April',
-                'May',
-                'June',
+                'Dec-2010',
+                'Jun-2011',
+                'Dec-2011',
+                'Jun-2012',
+                'Dec-2012',
+                'Jun-2013',
+                'Dec-2014',
+                'Jun-2015',
                       ];
 
       const data = {
         labels: labels,
         datasets: [{
-          label: 'Jazztel Capital',
+          label: 'Jazztel Capital - Position size',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
-          data: [0, 10, 5, 2, 20, 30, 45],
+          data: [3.4, 3.3, 3.3, 3, 1.5, 1.45, 0.91, 0.5],
         }]
       };
 
@@ -72,21 +82,20 @@ const dashboardLineJazztel = () => {
 const dashboardLineJazztelPnl = () => {
   $(function() {
       const labels = [
-                'January',
-                'February',
-                'March',
-                'April',
-                'May',
-                'June',
+                '2011',
+                '2012',
+                '2013',
+                '2014',
+                '2015',
                       ];
 
       const data = {
         labels: labels,
         datasets: [{
-          label: 'Jazztel PNL',
+          label: 'Jazztel PNL ctr in bps',
           backgroundColor: '#393e46',
           borderColor: '#393e46',
-          data: [0, 10, 5, 2, 20, 30, 45],
+          data: [10, 10, 21, 33, 1],
         }]
       };
 
