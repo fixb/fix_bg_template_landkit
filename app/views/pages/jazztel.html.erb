@@ -290,7 +290,7 @@
 
               <!-- Image -->
               <div class="card-zoom">
-                <%= image_tag("photos/photo-jazztel.jpg", class: "card-img-top") %>
+                <%= image_tag("photos/logo_theolia.jpeg", class: "card-img-top") %>
               </div>
 
               <!-- Body -->
@@ -302,10 +302,10 @@
                 </div>
 
                 <!-- Preheading -->
-                <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
+                <h6 class="text-uppercase mb-1 text-muted">Stock story</h6>
 
                 <!-- Heading -->
-                <h4 class="mb-0">Curology Campaign</h4>
+                <h4 class="mb-0">Theolia</h4>
 
               </div>
 
@@ -315,11 +315,11 @@
           <div class="col-12 col-md-6 col-lg-4 d-flex">
 
             <!-- Card -->
-            <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
+            <%= link_to cgg_path, class: "card mb-6 mb-lg-0 shadow-light-lg" do %>
 
               <!-- Image -->
-              <div class="card-zoom">
-                <%= image_tag("photos/photo-desktop.png", class: "card-img-top") %>
+              <div class="card-zoom mt-2">
+                <%= image_tag("photos/logo_CGG.png", class: "card-img-top") %>
               </div>
 
               <!-- Body -->
@@ -331,14 +331,14 @@
                 </div>
 
                 <!-- Preheading -->
-                <h6 class="text-uppercase mb-1 text-muted">Branding</h6>
+                <h6 class="text-uppercase mb-1 text-muted">Stock story</h6>
 
                 <!-- Heading -->
-                <h4 class="mb-0">Honest Packaging</h4>
+                <h4 class="mb-0">CGG</h4>
 
               </div>
 
-            </a>
+            <% end %>
 
           </div>
           <div class="col-12 col-md-6 col-lg-4 d-flex">
@@ -348,7 +348,7 @@
 
               <!-- Image -->
               <div class="card-zoom">
-                <%= image_tag("photos/photo-london.JPEG", class: "card-img-top") %>
+                <%= image_tag("photos/logo_pagesjaunes.png", class: "card-img-top") %>
               </div>
 
               <!-- Body -->
