@@ -26,14 +26,14 @@ console.log('Hello World from Webpacker')
 // External imports
 import "../styles/theme";
 import "../js/theme";
-import "controllers"
+import "controllers";
+
 
 import { myTyped } from "../js/typed";
 import { loadDynamicBannerText } from "../js/typed";
-import { theCountup } from "../js/countup";
+
 import { navBar } from "../js/navbar-dropdown";
 myTyped();
-theCountup();
 navBar();
 
 
@@ -78,3 +78,4 @@ if (document.getElementById("myChartpriceCl")) {
 if (document.getElementById("myChartpriceCgg")) {
   priceCgg();
 };
+

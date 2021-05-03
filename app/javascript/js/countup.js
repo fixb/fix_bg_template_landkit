@@ -1,4 +1,3 @@
-
 //
 // countup.js
 // Theme module
@@ -6,13 +5,7 @@
 
 import { CountUp } from 'countup.js';
 
-
-// const toggles = document.querySelectorAll('[data-countup]');
-
-const theCountup = () => {
-
-const toggles = document.querySelectorAll('#countup');
-
+const toggles = document.querySelectorAll('[data-countup]');
 
 function init(toggle) {
   const endVal = toggle.dataset.to ? +toggle.dataset.to : null;
@@ -36,7 +29,3 @@ document.addEventListener('aos:in:countup:in', function(e) {
     init(count);
   });
 });
-}
-
-export { theCountup };
-
