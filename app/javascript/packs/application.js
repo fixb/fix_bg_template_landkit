@@ -44,6 +44,7 @@ import { dashboardLineJazztelPnl } from "./charts";
 import { dashboardLineCggPnl } from "./charts";
 import { priceCl } from "./charts";
 import { priceCgg } from "./charts";
+import { directLending } from "./charts";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -77,5 +78,9 @@ if (document.getElementById("myChartpriceCl")) {
 
 if (document.getElementById("myChartpriceCgg")) {
   priceCgg();
+};
+
+if (document.getElementById("mydirectlendinggraph")) {
+  directLending();
 };
 

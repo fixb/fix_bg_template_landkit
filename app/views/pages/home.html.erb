@@ -567,12 +567,15 @@
     <section class="py-8 py-md-11 bg-light">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-md-7 col-lg-6 order-md-1">
+          <div class="col-12 col-md-5 col-lg-6 order-md-2">
+            <canvas id="mydirectlendinggraph"></canvas>
+          </div>
 
+          <div class="col-12 col-md-7 col-lg-6 order-md-1">
             <!-- Heading -->
             <h2>
               Invested in Direct lending... <br>
-              <span class="text-primary">since 2017</span>.
+              <span class="text-primary">since 2017 and keep counting</span>.
             </h2>
 
             <!-- Text -->
@@ -582,48 +585,31 @@
 
             <!-- List -->
             <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <%= image_tag("icons/duotone-icons/General/Clipboard.svg") %>
-              </div>
-
               <div class="ml-5">
-
                 <!-- Heading -->
                 <h4 class="mb-1">
+                  <%= image_tag("icons/duotone-icons/General/Clipboard.svg", class: "icon text-primary") %>
                   Direct Lending
                 </h4>
-
                 <!-- Text -->
                 <p class="text-muted mb-5">
                   Almost 200 companies helped and supported with in average 1.5m EUR loans and up to 24 months of duration.
                 </p>
-
               </div>
-
             </div>
+
             <div class="d-flex">
-
-              <!-- Icon -->
-              <div class="icon text-primary">
-                <%= image_tag("icons/duotone-icons/Files/Folder-star.svg") %>
-              </div>
-
               <div class="ml-5">
-
                 <!-- Heading -->
                 <h4 class="mb-1">
+                  <%= image_tag("icons/duotone-icons/Files/Folder-star.svg", class: "icon text-primary") %>
                   NPL servicing
                 </h4>
-
                 <!-- Text -->
                 <p class="text-muted mb-0">
                   Deployment of about 50m EUR of NPL servicing in Portugal with mix between equity and debt funding.
                 </p>
-
               </div>
-
             </div>
 
           </div>

@@ -182,6 +182,41 @@ const priceCl = () => {
   });
 }
 
+const directLending = () => {
+  $(function() {
+      const labels = [
+                'Jun-2018',
+                'Dec-2018',
+                'Jun-2019',
+                'Dec-2019',
+                'Jun-2020',
+                'Dec-2020',
+                'Apr-2021',
+                      ];
+
+      const data = {
+        labels: labels,
+        datasets: [{
+          label: 'Direct Lending book (%)',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [0.83, 1.96, 3.79, 6.14, 6.36, 7.69, 9.33],
+        }]
+      };
+
+      const config = {
+                      type: 'line',
+                      data,
+                      options: {}
+                    };
+
+  new Chart(
+    document.getElementById('mydirectlendinggraph'),
+    config
+  );
+  });
+}
+
 const priceCgg = () => {
   $(function() {
       const labels = [
@@ -223,5 +258,6 @@ export { dashboardLineJazztel };
 export { dashboardLineJazztelPnl };
 export { dashboardLineCggPnl };
 export { priceCl };
+export { directLending };
 export { priceCgg };
 
