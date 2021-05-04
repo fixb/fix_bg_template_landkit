@@ -198,8 +198,8 @@ const directLending = () => {
         labels: labels,
         datasets: [{
           label: 'Direct Lending book (%)',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
+          backgroundColor: '#325288',
+          borderColor: '#325288',
           data: [0.83, 1.96, 3.79, 6.14, 6.36, 7.69, 9.33],
         }]
       };
