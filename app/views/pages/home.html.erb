@@ -329,9 +329,11 @@
               <div class="card-body">
 
                 <!-- Heading -->
-                <h6 class="text-uppercase text-danger d-inline-block mb-5 mr-1">
-                  Solocal (aka Pages Jaunes)
-                </h6>
+                <%= link_to solocal_path do %>
+                  <h6 class="text-uppercase text-danger d-inline-block mb-5 mr-1">
+                    Solocal (aka Pages Jaunes)
+                  </h6>
+                <% end %>
 
                 <!-- Badge -->
                 <%= content_tag(:span, '2010', class: "badge alert-danger") %>
@@ -384,9 +386,9 @@
 
                 <!-- Heading -->
                 <%= link_to futuren_path do  %>
-                <h6 class="text-uppercase text-success d-inline-block mb-5 mr-1">
-                  Futuren (aka Theolia)
-                </h6>
+                  <h6 class="text-uppercase text-success d-inline-block mb-5 mr-1">
+                    Futuren (aka Theolia)
+                  </h6>
                 <% end %>
 
                 <!-- List group -->
@@ -450,9 +452,11 @@
               <div class="card-body">
 
                 <!-- Heading -->
-                <h6 class="text-uppercase text-gray-500 d-inline-block mb-5 mr-1">
-                  CGG
-                </h6>
+                <%= link_to cgg_path do %>
+                  <h6 class="text-uppercase text-gray-500 d-inline-block mb-5 mr-1">
+                    CGG
+                  </h6>
+                <% end %>
 
                 <!-- Badge -->
                 <%= content_tag(:span, '2016-2018', class: "badge alert-secondary") %>
