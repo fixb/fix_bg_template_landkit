@@ -383,66 +383,62 @@
               <div class="card-body">
 
                 <!-- Heading -->
+                <%= link_to futuren_path do  %>
                 <h6 class="text-uppercase text-success d-inline-block mb-5 mr-1">
                   Futuren (aka Theolia)
                 </h6>
-
-                <!-- Badge -->
-               <%= content_tag(:span, '2010', class: "badge alert-success") %>
+                <% end %>
 
                 <!-- List group -->
                 <div>
                   <div class="list-group list-group-flush">
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
                       <p class="font-weight-bold mb-1">
-                        Convertible bond restructuring
+                        <div class="list-group-item text-reset text-decoration-none" href="#!">
+                          <%= content_tag(:span, '2007', class: "badge alert-success") %>
+                            Convertible bond issuance 240m€ maturity 2012
+                          </p>
+                          <p class="font-size-sm text-muted mb-0">
+                            Market capitalisation at that time was about 400m€+ following acquisition of a 165m MW portfolio from General Electric
+                          </p>
+                        </div>
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
+                      <p class="font-weight-bold mb-1">
+                        <%= content_tag(:span, '2010', class: "badge alert-success") %>
+                        Convertible bond restructuration and 60.5m€ capital increase
                       </p>
                       <p class="font-size-sm text-muted mb-0">
-                        115m € market cap
+                        with asset disposals from non-wind power activities
                       </p>
-
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
+                    </div>
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
                       <p class="font-weight-bold mb-1">
-                        Capital increase of 60m€
+                        <%= content_tag(:span, '2013', class: "badge alert-success") %>
+                        Failed takeover approach from Macquarie
                       </p>
                       <p class="font-size-sm text-muted mb-0">
-                        partially underwritten by B&G
+                        110m€ market capitalisation with a 50% premium
                       </p>
+                    </div>
 
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
                       <p class="font-weight-bold mb-1">
-                        Buyback of a part of the CB and A&E of the remaining
+                        <%= content_tag(:span, '2014', class: "badge alert-success") %>
+                        Convertible bond restructuration and 60m€ capital increase
                       </p>
                       <p class="font-size-sm text-muted mb-0">
-                        with a re-striking
+                        Commitment from B&G to subscribe 10m€ and underwritten the remaining 50m€
                       </p>
+                    </div>
 
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
                       <p class="font-weight-bold mb-1">
-                        Failed Takeover approach from Macquarie in July - September 2013
+                        <%= content_tag(:span, '2017', class: "badge alert-success") %>
+                        Successful takeover by EDF-Energies Nouvelles
                       </p>
                       <p class="font-size-sm text-muted mb-0">
-                        acceptance level at 64.5% below 66% threshold despite a 50% premium at 1.70€
+                        About 320m€ market capitalisation with almost a 40% premium
                       </p>
-
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
-                      <p class="font-weight-bold mb-1">
-                        Successful takeover by EDF- Energies Nouvelles launched in April 2017
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        38% premium at 1.15€ for shares and 9.37€ for each convertible bond
-                      </p>
-
-                    </a>
+                    </div>
                   </div>
                 </div>
 

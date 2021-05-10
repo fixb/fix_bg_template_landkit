@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 get 'about', to: "pages#about"
 get 'cgg', to: "pages#cgg"
 get 'jazztel', to: "pages#jazztel"
+get 'futuren', to: "pages#futuren"
+get 'solocal', to: "pages#solocal"
 end
