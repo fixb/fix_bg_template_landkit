@@ -32,7 +32,7 @@ toggles.forEach(toggle => {
 
 const loadDynamicBannerText = () => {
   new Typed('#banner-typed-text', {
-    strings: ["Convertible bond issuance", "Capital increase underwriting", "Loans financing", "Equity ownership"],
+    strings: ["Convertible bond", "Capital increase", "Loans", "High yield debt"],
     typeSpeed: 40,
     backSpeed: 40,
     backDelay: 1000,
