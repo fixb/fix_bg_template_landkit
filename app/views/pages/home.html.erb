@@ -208,17 +208,10 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- SHAPE
-    ================================================== -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-light">
-        <%= image_tag("shapes/curves/curve-2.svg") %>
-      </div>
-    </div>
 
     <!-- LATEST POSTS
     ================================================== -->
-    <section class="py-8 py-md-11 bg-gradient-light-white">
+    <section class="py-5 py-md-8 bg-gradient-light-white">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6">
@@ -251,20 +244,19 @@
 
             <!-- Card -->
             <div class="card card-border border-primary shadow-light-lg mb-6 mb-md-8" data-aos="fade-up">
+              <%= link_to jazztel_path, class: "text-primary text-decoration-none" do %>
               <div class="card-body">
 
                 <!-- Heading -->
-                <%= link_to jazztel_path do %>
                   <h6 class="text-uppercase text-primary d-inline-block mb-5 mr-1">
                     Jazztel
                   </h6>
-                <% end %>
+
 
                 <!-- List group -->
                 <div>
                   <div class="list-group list-group-flush">
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
                       <p class="font-weight-bold mb-1">
                         <%= content_tag(:span, '2009', class: "badge alert-info") %>
                         Restructuring of the €275m 5% convertible bonds due April 2010
@@ -272,10 +264,8 @@
                       <p class="font-size-sm text-muted mb-0">
                         Debt falls to 1.8 times EBITDA from 5.4 times
                       </p>
-
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
+                    </div>
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
                       <p class="font-weight-bold mb-1">
                         <%= content_tag(:span, '2010', class: "badge alert-info") %>
                         A Right issue
@@ -283,9 +273,8 @@
                       <p class="font-size-sm text-muted mb-0">
                         80m€ of which 70m€ will help buying back 50% of the outstanding CB
                       </p>
-
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
+                    </div>
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
 
                       <p class="font-weight-bold mb-1">
                         Buyback and cancellation of bonds for around half of the original amount outstanding with the
@@ -294,20 +283,17 @@
                       <p class="font-size-sm text-muted mb-0">
                         Issuance of a 110m EUR 9.75% cpn Apr-2013
                       </p>
-
-                    </a>
-                      <a class="list-group-item text-reset text-decoration-none" href="#!">
-
+                    </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
                       <p class="font-weight-bold mb-1">
                          Free allotment of warrants to bondholders
                       </p>
                       <p class="font-size-sm text-muted mb-0">
                         up to 200m EUR
                       </p>
+                    </div>
 
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
+                    <div class="list-group-item text-reset text-decoration-none" href="#!">
                       <p class="font-weight-bold mb-1">
                         <%= content_tag(:span, '2014', class: "badge alert-info") %>
                          Friendly takeover bid by Orange
@@ -315,65 +301,55 @@
                       <p class="font-size-sm text-muted mb-0">
                         3.4bn€ deal, all-cash, with a 34% premium vs L30D-VWAP and a 12x EV/NTM EBITDA valuation multiple
                       </p>
-
-                    </a>
+                    </div>
                   </div>
                 </div>
-
               </div>
+              <% end %>
             </div>
 
             <!-- Card -->
             <div class="card card-border border-danger shadow-light-lg mb-6 mb-md-8" data-aos="fade-up">
-              <div class="card-body">
-
-                <!-- Heading -->
-                <%= link_to solocal_path do %>
-                  <h6 class="text-uppercase text-danger d-inline-block mb-5 mr-1">
-                    Solocal (aka Pages Jaunes)
-                  </h6>
-                <% end %>
-
-                <!-- List group -->
-                <div>
-                  <div class="list-group list-group-flush">
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2014', class: "badge alert-danger") %>
-                        Debt restructuring and capital raising
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        2013 revenues at 1bn€ and 1.6bn€ of debt
-                      </p>
-
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2016', class: "badge alert-danger") %>
-                        Restructuration with an amend and extend
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        Help with the capital increase
-                      </p>
-
-                    </a>
-                    <a class="list-group-item text-reset text-decoration-none" href="#!">
-
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2020', class: "badge alert-danger") %>
-                        Capital increase
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        to help them preparing the future
-                      </p>
-
-                    </a>
+              <%= link_to solocal_path, class: "text-danger text-decoration-none" do %>
+                <div class="card-body">
+                  <!-- Heading -->
+                    <h6 class="text-uppercase text-danger d-inline-block mb-5 mr-1">
+                      Solocal (aka Pages Jaunes)
+                    </h6>
+                  <!-- List group -->
+                  <div>
+                    <div class="list-group list-group-flush">
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2014', class: "badge alert-danger") %>
+                          Debt restructuring and capital raising
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          2013 revenues at 1bn€ and 1.6bn€ of debt
+                        </p>
+                      </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2016', class: "badge alert-danger") %>
+                          Restructuration with an amend and extend
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Help with the capital increase
+                        </p>
+                      </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2020', class: "badge alert-danger") %>
+                          Capital increase
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          to help them preparing the future
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-              </div>
+              <% end %>
             </div>
 
           </div>
@@ -381,142 +357,142 @@
 
             <!-- Card -->
             <div class="card card-border border-success shadow-light-lg mb-6 mb-md-8" data-aos="fade-up" data-aos-delay="100">
-              <div class="card-body">
+              <%= link_to futuren_path, class: "text-success text-decoration-none" do  %>
+                <div class="card-body">
 
-                <!-- Heading -->
-                <%= link_to futuren_path do  %>
-                  <h6 class="text-uppercase text-success d-inline-block mb-5 mr-1">
-                    Futuren (aka Theolia)
-                  </h6>
-                <% end %>
+                  <!-- Heading -->
+                    <h6 class="text-uppercase text-success d-inline-block mb-5 mr-1">
+                      Futuren (aka Theolia)
+                    </h6>
+                  <!-- List group -->
+                  <div>
+                    <div class="list-group list-group-flush">
+                        <p class="font-weight-bold mb-1">
+                          <div class="list-group-item text-reset text-decoration-none" href="#!">
+                            <%= content_tag(:span, '2007', class: "badge alert-success") %>
+                              Convertible bond issuance 240m€ maturity 2012
+                            </p>
+                            <p class="font-size-sm text-muted mb-0">
+                              Market capitalisation at that time was about 400m€+ following acquisition of a 165m MW portfolio from General Electric
+                            </p>
+                          </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2010', class: "badge alert-success") %>
+                          Convertible bond restructuration and 60.5m€ capital increase
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          with asset disposals from non-wind power activities
+                        </p>
+                      </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2013', class: "badge alert-success") %>
+                          Failed takeover approach from Macquarie
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          110m€ market capitalisation with a 50% premium
+                        </p>
+                      </div>
 
-                <!-- List group -->
-                <div>
-                  <div class="list-group list-group-flush">
-                      <p class="font-weight-bold mb-1">
-                        <div class="list-group-item text-reset text-decoration-none" href="#!">
-                          <%= content_tag(:span, '2007', class: "badge alert-success") %>
-                            Convertible bond issuance 240m€ maturity 2012
-                          </p>
-                          <p class="font-size-sm text-muted mb-0">
-                            Market capitalisation at that time was about 400m€+ following acquisition of a 165m MW portfolio from General Electric
-                          </p>
-                        </div>
-                    <div class="list-group-item text-reset text-decoration-none" href="#!">
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2010', class: "badge alert-success") %>
-                        Convertible bond restructuration and 60.5m€ capital increase
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        with asset disposals from non-wind power activities
-                      </p>
-                    </div>
-                    <div class="list-group-item text-reset text-decoration-none" href="#!">
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2013', class: "badge alert-success") %>
-                        Failed takeover approach from Macquarie
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        110m€ market capitalisation with a 50% premium
-                      </p>
-                    </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2014', class: "badge alert-success") %>
+                          Convertible bond restructuration and 60m€ capital increase
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Commitment from B&G to subscribe 10m€ and underwritten the remaining 50m€
+                        </p>
+                      </div>
 
-                    <div class="list-group-item text-reset text-decoration-none" href="#!">
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2014', class: "badge alert-success") %>
-                        Convertible bond restructuration and 60m€ capital increase
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        Commitment from B&G to subscribe 10m€ and underwritten the remaining 50m€
-                      </p>
-                    </div>
-
-                    <div class="list-group-item text-reset text-decoration-none" href="#!">
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2017', class: "badge alert-success") %>
-                        Successful takeover by EDF-Energies Nouvelles
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        About 320m€ market capitalisation with almost a 40% premium
-                      </p>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2017', class: "badge alert-success") %>
+                          Successful takeover by EDF-Energies Nouvelles
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          About 320m€ market capitalisation with almost a 40% premium
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-              </div>
+                </div>
+              <% end %>
             </div>
 
             <!-- Card -->
             <div class="card card-border border-gray-800 shadow-light-lg mb-6 mb-md-8" data-aos="fade-up">
-              <div class="card-body">
+              <%= link_to cgg_path, class: "text-secondary text-decoration-none" do %>
+                <div class="card-body">
 
-                <!-- Heading -->
-                <%= link_to cgg_path do %>
-                  <h6 class="text-uppercase text-gray-500 d-inline-block mb-5 mr-1">
-                    CGG
-                  </h6>
-                <% end %>
+                  <!-- Heading -->
+                    <h6 class="text-uppercase text-gray-500 d-inline-block mb-5 mr-1">
+                      CGG
+                    </h6>
 
-                <!-- List group -->
-                <div>
-                  <div class="list-group list-group-flush">
-                      <p class="font-weight-bold mb-1">
-                        <div class="list-group-item text-reset text-decoration-none" href="#!">
-                          <%= content_tag(:span, '2014', class: "badge alert-secondary") %>
-                            Failed takeover by Technip
-                          </p>
-                          <p class="font-size-sm text-muted mb-0">
-                            1.46bn€, cash, 27% premium
-                          </p>
-                        </div>
-                    <div class="list-group-item text-reset text-decoration-none" href="#!">
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2016', class: "badge alert-secondary") %>
-                        350m€ Capital increase
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        2.5bn€ debt
-                      </p>
-                    </div>
-                    <div class="list-group-item text-reset text-decoration-none" href="#!">
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2018', class: "badge alert-secondary") %>
-                        Debt restructuring and capital increase
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        back to less than 2x Net Debt/EBITDA
-                      </p>
-                    </div>
-                    <div class="list-group-item text-reset text-decoration-none" href="#!">
-                      <p class="font-weight-bold mb-1">
-                        <%= content_tag(:span, '2020', class: "badge alert-secondary") %>
-                        Successful $1.2Bn Senior Secured Notes Debt Refinancing
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                          Normalization of capital structure through $1.2Bn equivalent refinancing in
-                              EUR and USD with a new $100m revolving credit facility (RCF)
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        Reduction of cost of debt with a blended interest rate of 8.17% and
-                        elimination of $45m per year in PIK interest
-                      </p>
-                      <p class="font-size-sm text-muted mb-0">
-                        Extension of maturities to 2027 (6 years)
-                      </p>
+
+                  <!-- List group -->
+                  <div>
+                    <div class="list-group list-group-flush">
+                        <p class="font-weight-bold mb-1">
+                          <div class="list-group-item text-reset text-decoration-none" href="#!">
+                            <%= content_tag(:span, '2014', class: "badge alert-secondary") %>
+                              Failed takeover by Technip
+                            </p>
+                            <p class="font-size-sm text-muted mb-0">
+                              1.46bn€, cash, 27% premium
+                            </p>
+                          </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2016', class: "badge alert-secondary") %>
+                          350m€ Capital increase
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          2.5bn€ debt
+                        </p>
+                      </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2018', class: "badge alert-secondary") %>
+                          Debt restructuring and capital increase
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          back to less than 2x Net Debt/EBITDA
+                        </p>
+                      </div>
+                      <div class="list-group-item text-reset text-decoration-none" href="#!">
+                        <p class="font-weight-bold mb-1">
+                          <%= content_tag(:span, '2020', class: "badge alert-secondary") %>
+                          Successful $1.2Bn Senior Secured Notes Debt Refinancing
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                            Normalization of capital structure through $1.2Bn equivalent refinancing in
+                                EUR and USD with a new $100m revolving credit facility (RCF)
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Reduction of cost of debt with a blended interest rate of 8.17% and
+                          elimination of $45m per year in PIK interest
+                        </p>
+                        <p class="font-size-sm text-muted mb-0">
+                          Extension of maturities to 2027 (6 years)
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            <% end %>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PLACEMENT RATES
+    <!-- Returns
     ================================================== -->
     <section>
-      <div class="container py-8 pt-md-11 pb-md-9 border-top">
+      <div class="container py-3 pt-md-5 pb-md-6 border-top">
         <div class="row">
           <div class="col-12 col-md-10 col-lg-8">
 
@@ -565,7 +541,7 @@
 
     <!-- IMAGE
     ================================================== -->
-    <section data-jarallax data-speed=".8" class="py-14 py-lg-16 jarallax" style="background-image: url(<%= asset_path 'covers/cover-22.jpg' %>;">
+    <section data-jarallax data-speed=".9" class="py-8 py-lg-12 jarallax" style="background-image: url(<%= asset_path 'covers/cover-22.jpg' %>;">
 
       <!-- Shape -->
       <div class="shape shape-top shape-fluid-x svg-shim text-white">
@@ -581,7 +557,7 @@
 
     <!-- ABOUT
     ================================================== -->
-    <section class="py-8 py-md-11 bg-light">
+    <section class="py-5 py-md-8 bg-light">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-5 col-lg-6 order-md-2">
@@ -647,7 +623,7 @@
             </h3>
 
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-6 mb-md-0">
+            <p class="font-size-lg text-muted mb-4 mb-md-0">
               Let's move forward!
             </p>
 
