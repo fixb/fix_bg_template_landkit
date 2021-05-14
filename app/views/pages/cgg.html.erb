@@ -280,14 +280,69 @@
       </div> <!-- / .container -->
     </section>
 
+    <section class="pt-7 pt-md-10 bg-light">
+      <div class="container">
+        <div class="row align-items-center mb-5">
+          <div class="col-12 col-md">
+              <!-- Heading -->
+              <h3 class="mb-0">
+                Related Work
+              </h3>
+              <!-- Text -->
+              <p class="mb-0 text-muted">
+                Other goodies that are similar to this one.
+              </p>
+            </div>
+            <div class="col-12 col-md-auto">
+              <!-- Button -->
+              <%= link_to "Back", root_path, class: "btn btn-sm btn-outline-gray-300 d-none d-md-inline" %>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <%= link_to jazztel_path, class: "card mb-6 mb-lg-6 shadow-light-lg", data: { turbolinks: false } do %>
+              <!-- Image -->
+              <div class="card-zoom mt-2">
+                <%= image_tag("photos/logo_jazztel.png", class: "card-img-top") %>
+              </div>
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                </div>
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Stock story</h6>
+                <!-- Heading -->
+                <h4 class="mb-0">Jazztel</h4>
+              </div>
+            <% end %>
+          </div>
 
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+          <div class="col-12 col-md-6 col-lg-4 d-flex">
+            <!-- Card -->
+            <%= link_to futuren_path, class: "card mb-6 mb-lg-6 shadow-light-lg", data: { turbolinks: false } do %>
+              <!-- Image -->
+              <div class="card-zoom mt-2">
+                <%= image_tag("photos/logo_theolia.jpeg", class: "card-img-top") %>
+              </div>
+              <!-- Body -->
+              <div class="card-body">
+                <!-- Shape -->
+                <div class="shape shape-bottom-100 shape-fluid-x svg-shim text-white">
+                </div>
+                <!-- Preheading -->
+                <h6 class="text-uppercase mb-1 text-muted">Stock story</h6>
+                <!-- Heading -->
+                <h4 class="mb-0">Futuren</h4>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div> <!-- / .container -->
+    </section>
 
-      </div>
-    </div>
 
     <!-- CTA -->
     <section class="pt-6 pt-md-8 bg-gray-200">

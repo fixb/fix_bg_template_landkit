@@ -274,11 +274,8 @@
 
           </div>
           <div class="col-12 col-md-auto">
-
             <!-- Button -->
-            <a href="#!" class="btn btn-sm btn-outline-gray-300 d-none d-md-inline">
-              View all
-            </a>
+            <%= link_to "Back", root_path, class: "btn btn-sm btn-outline-gray-300 d-none d-md-inline" %>
 
           </div>
         </div> <!-- / .row -->
@@ -286,7 +283,7 @@
           <div class="col-12 col-md-6 col-lg-4 d-flex">
 
             <!-- Card -->
-            <%= link_to cgg_path, class: "card mb-6 mb-lg-0 shadow-light-lg" do %>
+            <%= link_to cgg_path, class: "card mb-6 mb-lg-0 shadow-light-lg", data: { turbolinks: false }  do %>
 
               <!-- Image -->
               <div class="card-zoom mt-2">
@@ -314,7 +311,7 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             <!-- Card -->
-            <%= link_to jazztel_path, class: "card d-md-none d-lg-flex shadow-light-lg" do %>
+            <%= link_to jazztel_path, class: "card d-md-none d-lg-flex shadow-light-lg", data: { turbolinks: false }  do %>
 
               <!-- Image -->
               <div class="card-zoom">

@@ -270,7 +270,7 @@
           <div class="col-12 col-md-6 col-lg-4 d-flex">
 
             <!-- Card -->
-            <%= link_to cgg_path, class: "card mb-6 mb-lg-0 shadow-light-lg" do %>
+            <%= link_to cgg_path, class: "card mb-6 mb-lg-0 shadow-light-lg", data: { turbolinks: false } do %>
 
               <!-- Image -->
               <div class="card-zoom mt-2">
@@ -289,7 +289,7 @@
                 <h6 class="text-uppercase mb-1 text-muted">Stock story</h6>
 
                 <!-- Heading -->
-                <h4 class="mb-0">CGG</h4>
+                <h4 class="mb-0">Futuren</h4>
 
               </div>
 
@@ -299,7 +299,7 @@
           <div class="col-12 col-md-6 col-lg-4 d-flex">
 
             <!-- Card -->
-            <a class="card d-md-none d-lg-flex shadow-light-lg" href="#!">
+            <%= link_to solocal_path, class: "card d-md-none d-lg-flex shadow-light-lg", data: { turbolinks: false } do %>
 
               <!-- Image -->
               <div class="card-zoom">
@@ -315,14 +315,14 @@
                 </div>
 
                 <!-- Preheading -->
-                <h6 class="text-uppercase mb-1 text-muted">Ideation</h6>
+                <h6 class="text-uppercase mb-1 text-muted">Stock story</h6>
 
                 <!-- Heading -->
-                <h4 class="mb-0">Doodle Pad</h4>
+                <h4 class="mb-0">Solocal</h4>
 
               </div>
 
-            </a>
+            <% end %>
 
           </div>
         </div> <!-- / .row -->
