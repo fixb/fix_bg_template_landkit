@@ -42,6 +42,7 @@ import { dashboardLine } from "./charts";
 import { dashboardLineJazztel } from "./charts";
 import { dashboardLineJazztelPnl } from "./charts";
 import { dashboardLineCggPnl } from "./charts";
+import { dashboardLineSolocal } from "./charts";
 import { priceCl } from "./charts";
 import { priceCgg } from "./charts";
 import { directLending } from "./charts";
@@ -84,3 +85,6 @@ if (document.getElementById("mydirectlendinggraph")) {
   directLending();
 };
 
+if (document.getElementById("myChartSolocal")) {
+  dashboardLineSolocal();
+};
